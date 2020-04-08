@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Training.API</name>
+    </assembly>
+    <members>
+        <member name="T:Training.API.Controllers.TrainingsController">
+            <summary>
+            Training APIs to get all the existing trainings from database and to add new training.
+            </summary>
+        </member>
+        <member name="M:Training.API.Controllers.TrainingsController.#ctor(Training.Lib.Services.ITrainingService)">
+            <summary>
+            Constructor gets the dependent TrainingService instance from IoC via dependency injection
+            </summary>
+            <param name="trainingService"></param>
+        </member>
+        <member name="M:Training.API.Controllers.TrainingsController.Get">
+            <summary>
+            Get all the existing trainings from database 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Training.API.Controllers.TrainingsController.Add(Training.Lib.DataViewModel.WDSTrainingInputModel)">
+            <summary>
+            Add new training to the database
+            </summary>
+            <param name="newTraining"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
